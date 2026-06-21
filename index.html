@@ -38,18 +38,29 @@
     <style>
         body {
             background-color: #e9d5ff; /* Latar belakang presentasi ungu muda seperti di gambar */
-            padding: 2rem 1rem;
+            padding: 1rem 0.5rem;
             display: flex;
             justify-content: center;
         }
-
+        @media (min-width: 640px) {
+            body {
+                padding: 2rem 1rem;
+            }
+        }
+ 
         .main-container {
             background-color: #ffffff;
             width: 100%;
             max-width: 1280px;
-            border-radius: 40px;
+            border-radius: 24px;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            padding-bottom: 4rem;
+            padding-bottom: 2rem;
+        }
+        @media (min-width: 640px) {
+            .main-container {
+                border-radius: 40px;
+                padding-bottom: 4rem;
+            }
         }
 
         /* Hero text glow & overlapping */
