@@ -192,9 +192,12 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 min-h-[550px] lg:h-[680px] items-center">
                 <!-- Left Column: Content -->
                 <div class="col-span-1 lg:col-span-7 px-8 pl-16 lg:pl-24 py-16 flex flex-col gap-6 relative z-10">
-                    <span class="text-brand-purple font-bold text-xs md:text-sm tracking-wider uppercase">
-                        // NURUL LAYLI DIGITAL BUSINESS STRATEGIST
-                    </span>
+                    <div>
+                        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-purple/10 text-brand-purple text-xs font-bold uppercase tracking-wider border border-brand-purple/20">
+                            <span class="w-1.5 h-1.5 rounded-full bg-brand-purple animate-pulse"></span>
+                            Digital Business Strategist
+                        </span>
+                    </div>
                     <h1 class="font-display font-black text-4xl sm:text-5xl md:text-6xl lg:text-[72px] text-brand-dark leading-[1.05] tracking-tight">
                         Introducing <span class="relative inline-block text-brand-purple">Business Analysis<span class="absolute left-0 bottom-[-6px] w-full h-[8px] pointer-events-none"><svg viewBox="0 0 100 10" preserveAspectRatio="none" class="w-full h-full stroke-brand-purple stroke-[3.5px] fill-none" stroke-linecap="round"><path d="M1 5 C 20 2, 80 2, 99 5 C 60 7, 30 7, 2 9" /></svg></span></span>
                     </h1>
@@ -411,8 +414,11 @@
             
             <!-- Left Column (Title & Text) -->
             <div class="md:col-span-4 flex flex-col gap-4 md:gap-12">
-                <div>
-                    <span class="text-brand-purple font-semibold text-sm tracking-wide">// About Nurul</span>
+                <div class="mb-2">
+                    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-purple/10 text-brand-purple text-xs font-bold uppercase tracking-wider border border-brand-purple/20">
+                        <span class="w-1.5 h-1.5 rounded-full bg-brand-purple"></span>
+                        About Me
+                    </span>
                 </div>
                 <p class="text-gray-500 leading-relaxed text-sm sm:text-base">
                     Sebagai gadis 18 tahun yang penuh energi, saya tidak sekadar belajar teori. Saya mendesain analisa bisnis dengan empati dan insting tajam, menemukan celah berharga di dunia digital yang bukan hanya fungsional, tapi sangat relevan dengan pasar.
@@ -457,7 +463,12 @@
             <!-- Section Header -->
             <div class="flex flex-col md:grid md:grid-cols-12 gap-8 mb-12 md:mb-16 items-start">
                 <div class="order-2 md:order-1 md:col-span-4 flex flex-col gap-4 md:gap-6 mt-4 md:mt-0">
-                    <span class="text-brand-purple font-semibold text-sm tracking-wide">// Selected Work</span>
+                    <div class="mb-2">
+                        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 text-brand-purple text-xs font-bold uppercase tracking-wider border border-white/10">
+                            <span class="w-1.5 h-1.5 rounded-full bg-brand-purple animate-pulse"></span>
+                            Selected Work
+                        </span>
+                    </div>
                     <p class="text-gray-400 text-sm leading-relaxed max-w-sm">
                         Koleksi kurasi event, workshop, dan proyek analisis yang dirancang untuk memadukan peluang bisnis, estetika, dan solusi digital yang fungsional.
                     </p>
@@ -477,8 +488,8 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 
                 <!-- Card 1 -->
-                <div class="bg-[#18181b] p-4 rounded-[2rem] hover-scale group cursor-pointer border border-white/5 flex flex-col h-full">
-                    <div class="rounded-[1.5rem] overflow-hidden h-56 sm:h-64 md:h-80 mb-6 relative bg-gray-800">
+                <div class="bg-[#18181b] p-5 rounded-[2rem] hover-scale group cursor-pointer border border-white/5 hover:border-brand-purple/30 hover:shadow-[0_20px_50px_rgba(92,36,255,0.15)] flex flex-col h-full transition-all duration-300">
+                    <div class="rounded-[1.5rem] overflow-hidden h-56 sm:h-64 md:h-80 mb-5 relative bg-gray-800">
                         <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Market Analysis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                             <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center translate-y-4 group-hover:translate-y-0 transition-transform">
@@ -487,18 +498,22 @@
                         </div>
                     </div>
                     <div class="px-2 mt-auto">
-                        <h3 class="text-white font-display text-xl sm:text-2xl font-semibold mb-2">Market Loophole</h3>
+                        <div class="flex gap-2 mb-3">
+                            <span class="px-2.5 py-1 rounded-full bg-brand-purple/10 text-brand-purple text-[10px] font-bold uppercase tracking-wider border border-brand-purple/20">Research</span>
+                            <span class="px-2.5 py-1 rounded-full bg-white/5 text-gray-400 text-[10px] font-bold uppercase tracking-wider">Strategy</span>
+                        </div>
+                        <h3 class="text-white font-display text-xl sm:text-2xl font-semibold mb-2 group-hover:text-brand-purple transition-colors">Market Loophole</h3>
                         <p class="text-gray-400 text-sm">Riset Celah Pasar Digital & Analisis Kompetitor</p>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="bg-[#18181b] p-4 rounded-[2rem] hover-scale group cursor-pointer border border-white/5 flex flex-col h-full">
-                    <div class="rounded-[1.5rem] overflow-hidden h-56 sm:h-64 md:h-80 mb-6 relative bg-gray-800">
+                <div class="bg-[#18181b] p-5 rounded-[2rem] hover-scale group cursor-pointer border border-white/5 hover:border-brand-purple/30 hover:shadow-[0_20px_50px_rgba(92,36,255,0.15)] flex flex-col h-full transition-all duration-300">
+                    <div class="rounded-[1.5rem] overflow-hidden h-56 sm:h-64 md:h-80 mb-5 relative bg-gray-800">
                         <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Digital Blueprint" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 mix-blend-overlay">
                         <!-- Aksen kuning untuk project highlight -->
-                        <div class="absolute top-4 left-4">
-                            <span class="px-4 py-2 bg-brand-yellow text-brand-dark font-bold text-xs rounded-full shadow-lg">Featured</span>
+                        <div class="absolute top-4 left-4 z-10">
+                            <span class="px-3.5 py-1.5 bg-[#FACC15] text-brand-dark font-black text-[10px] uppercase tracking-wider rounded-full shadow-lg">Featured</span>
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                             <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center translate-y-4 group-hover:translate-y-0 transition-transform">
@@ -507,7 +522,11 @@
                         </div>
                     </div>
                     <div class="px-2 mt-auto">
-                        <h3 class="text-white font-display text-xl sm:text-2xl font-semibold mb-2">Digital Blueprint</h3>
+                        <div class="flex gap-2 mb-3">
+                            <span class="px-2.5 py-1 rounded-full bg-brand-purple/10 text-brand-purple text-[10px] font-bold uppercase tracking-wider border border-brand-purple/20">Workshop</span>
+                            <span class="px-2.5 py-1 rounded-full bg-white/5 text-gray-400 text-[10px] font-bold uppercase tracking-wider">Education</span>
+                        </div>
+                        <h3 class="text-white font-display text-xl sm:text-2xl font-semibold mb-2 group-hover:text-brand-purple transition-colors">Digital Blueprint</h3>
                         <p class="text-gray-400 text-sm">Workshop Pemetaan Peluang Bisnis UTDI</p>
                     </div>
                 </div>
@@ -520,17 +539,20 @@
             
             <!-- Left Column (Service/Contact Text) -->
             <div class="order-2 md:order-1 md:col-span-4 flex flex-col gap-4 md:gap-8 mt-4 md:mt-0">
-                <div>
-                    <span class="text-brand-purple font-semibold text-sm tracking-wide">// Collaboration</span>
+                <div class="mb-2">
+                    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-purple/10 text-brand-purple text-xs font-bold uppercase tracking-wider border border-brand-purple/20">
+                        <span class="w-1.5 h-1.5 rounded-full bg-brand-purple"></span>
+                        Collaboration
+                    </span>
                 </div>
                 <p class="text-gray-500 text-sm leading-relaxed max-w-sm">
                     Dari pemetaan celah pasar hingga perumusan strategi bisnis yang komprehensif. Saya siap membantu mengubah ide mentah menjadi solusi digital yang memiliki dampak nyata.
                 </p>
                 <div class="mt-2 md:mt-4">
-                    <a href="mailto:nurul.layli@example.com" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-dark text-white rounded-full font-bold text-sm hover:bg-brand-purple hover:scale-105 transition-all">
+                    <a href="mailto:nurul.layli@example.com" class="inline-flex items-center gap-3.5 px-8 py-4 bg-brand-dark text-white rounded-full font-bold text-sm hover:bg-brand-purple hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25 transition-all group">
                         Say Hello
-                        <span class="bg-brand-yellow text-brand-dark rounded-full p-1">
-                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        <span class="bg-brand-yellow text-brand-dark rounded-full p-1.5 transition-transform group-hover:translate-x-1">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </span>
                     </a>
                 </div>
@@ -543,12 +565,19 @@
                 </h2>
                 
                 <!-- Footer accent image/banner -->
-                <div class="rounded-[2rem] overflow-hidden h-48 md:h-64 relative bg-gray-100 group">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Team Collaboration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80">
-                    <div class="absolute inset-0 bg-brand-purple/10 mix-blend-multiply"></div>
-                    <div class="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-2 sm:gap-0">
-                        <p class="text-white font-bold text-xs sm:text-sm md:text-lg drop-shadow-md">Based in Yogyakarta, ID</p>
-                        <p class="text-white font-medium text-[10px] sm:text-xs md:text-sm drop-shadow-md">UTDI Business Digital</p>
+                <div class="rounded-[2.5rem] overflow-hidden h-48 md:h-64 relative bg-gray-900 group border border-white/10 shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Team Collaboration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-60">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent opacity-80"></div>
+                    <div class="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-3 sm:gap-0 z-10">
+                        <div class="px-4 py-2 bg-white/10 backdrop-blur-md rounded-2xl border border-white/10">
+                            <p class="text-white font-bold text-xs sm:text-sm flex items-center gap-1.5">
+                                <svg class="w-4 h-4 text-brand-yellow" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                Yogyakarta, ID
+                            </p>
+                        </div>
+                        <div class="px-4 py-2 bg-brand-purple/20 backdrop-blur-md rounded-2xl border border-brand-purple/20">
+                            <p class="text-white font-bold text-xs sm:text-sm uppercase tracking-wider">UTDI Digital Business</p>
+                        </div>
                     </div>
                 </div>
             </div>
