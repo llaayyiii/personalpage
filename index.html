@@ -20,10 +20,10 @@
                     },
                     colors: {
                         brand: {
-                            purple: '#6d28d9',
+                            purple: '#5C24FF',
                             dark: '#0a0a0a',
                             light: '#f4f4f5',
-                            yellow: '#facc15', // Aksen bintang malam
+                            yellow: '#facc15',
                         }
                     },
                     letterSpacing: {
@@ -37,7 +37,7 @@
 
     <style>
         body {
-            background-color: #e9d5ff; /* Latar belakang presentasi ungu muda seperti di gambar */
+            background-color: #e9d5ff; /* Presentation background */
             padding: 1rem 0.5rem;
             display: flex;
             justify-content: center;
@@ -63,31 +63,25 @@
             }
         }
 
-        /* Hero text glow & overlapping */
-        .hero-title {
-            font-size: clamp(2.75rem, 10vw, 13rem);
-            line-height: 0.85;
-            background: linear-gradient(180deg, #ffffff 0%, #a1a1aa 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 10px 40px rgba(255,255,255,0.1);
+        /* Floating card animation */
+        @keyframes floatCard {
+            0%, 100% {
+                transform: translateY(0) rotate(-1deg);
+            }
+            50% {
+                transform: translateY(-8px) rotate(2deg);
+            }
+        }
+        .animate-float-card {
+            animation: floatCard 6s ease-in-out infinite;
         }
 
-        /* Lingkaran kosentris di belakang hero */
-        .concentric-circle {
-            position: absolute;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 50%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            pointer-events: none;
-        }
-
-        /* Efek fade pada foto placeholder agar terlihat menyatu dengan background hitam */
-        .portrait-mask {
-            mask-image: linear-gradient(to top, transparent 0%, black 20%, black 100%);
-            -webkit-mask-image: linear-gradient(to top, transparent 0%, black 20%, black 100%);
+        /* Soft edge fade for the portrait image to blend left edge with background */
+        .portrait-mask-fade {
+            mask-image: linear-gradient(to right, transparent 0%, black 20%), linear-gradient(to top, transparent 0%, black 15%);
+            mask-composite: intersect;
+            -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%), linear-gradient(to top, transparent 0%, black 15%);
+            -webkit-mask-composite: source-in;
         }
 
         /* Hover effects */
