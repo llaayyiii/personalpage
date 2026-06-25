@@ -98,16 +98,92 @@
     <main class="main-container">
         
         <!-- Navigation -->
-        <header class="pt-6 px-4 md:px-12 sticky top-4 z-50 transition-all duration-300">
-            <nav class="flex justify-center">
-                <div class="bg-gray-100/80 backdrop-blur-md p-1 sm:p-1.5 rounded-full flex items-center gap-1 sm:gap-2 shadow-lg border border-white/40">
-                    <a href="#" class="px-3.5 sm:px-6 py-2 sm:py-2.5 rounded-full bg-brand-purple text-white text-xs sm:text-sm font-medium transition-colors">Home</a>
-                    <a href="#about" class="px-3.5 sm:px-6 py-2 sm:py-2.5 rounded-full text-gray-600 hover:text-gray-900 text-xs sm:text-sm font-medium transition-colors">About</a>
-                    <a href="#portfolio" class="px-3.5 sm:px-6 py-2 sm:py-2.5 rounded-full text-gray-600 hover:text-gray-900 text-xs sm:text-sm font-medium transition-colors">Work<span class="hidden md:inline"> / Portfolio</span></a>
-                    <a href="#" class="px-3.5 sm:px-6 py-2 sm:py-2.5 rounded-full text-gray-600 hover:text-gray-900 text-xs sm:text-sm font-medium transition-colors hidden sm:block">Blog</a>
-                    <a href="#contact" class="px-3.5 sm:px-6 py-2 sm:py-2.5 rounded-full text-gray-600 hover:text-gray-900 text-xs sm:text-sm font-medium transition-colors hidden sm:block">Contact</a>
+        <!-- Header (Reference Design) -->
+        <header class="w-full z-50">
+            <!-- Top Dark Bar -->
+            <div class="bg-brand-dark text-gray-400 text-[11px] sm:text-xs py-2.5 px-4 md:px-12 flex flex-col sm:flex-row justify-between items-center gap-2 border-b border-white/10 rounded-t-[24px] sm:rounded-t-[40px]">
+                <!-- Top Left Details -->
+                <div class="flex items-center gap-4 flex-wrap justify-center">
+                    <span class="flex items-center gap-1.5">
+                        <!-- Location Icon -->
+                        <svg class="w-3.5 h-3.5 text-gray-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        Yogyakarta, ID
+                    </span>
+                    <a href="mailto:nurul.layli@example.com" class="flex items-center gap-1.5 hover:text-white transition-colors">
+                        <!-- Email Icon -->
+                        <svg class="w-3.5 h-3.5 text-gray-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        nurul.layli@example.com
+                    </a>
                 </div>
-            </nav>
+                <!-- Top Right Details -->
+                <div class="flex items-center gap-4 sm:gap-6">
+                    <div class="hidden md:flex items-center gap-4 text-gray-400">
+                        <a href="#about" class="hover:text-white transition-colors">About</a>
+                        <span>/</span>
+                        <a href="#portfolio" class="hover:text-white transition-colors">Work</a>
+                        <span>/</span>
+                        <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+                    </div>
+                    <!-- Social Media Links -->
+                    <div class="flex items-center gap-3">
+                        <a href="#" class="hover:text-white text-gray-500 transition-colors" aria-label="LinkedIn">
+                            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="#" class="hover:text-white text-gray-500 transition-colors" aria-label="Instagram">
+                            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="#" class="hover:text-white text-gray-500 transition-colors" aria-label="GitHub">
+                            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main White Navbar -->
+            <div class="bg-white py-4 px-6 md:px-12 flex justify-between items-center shadow-[0_1px_0_0_rgba(0,0,0,0.05)] relative z-40">
+                <!-- Brand Logo (Donut circle + Text) -->
+                <a href="#" class="flex items-center gap-2.5">
+                    <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-[#7E30E1] to-[#5C24FF] flex items-center justify-center p-2 shadow-sm">
+                        <div class="w-3.5 h-3.5 rounded-full bg-white"></div>
+                    </div>
+                    <span class="font-display font-black text-xl sm:text-2xl text-brand-dark tracking-tight">
+                        Nurul Layli
+                    </span>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <div class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wider text-gray-700">
+                    <a href="#" class="hover:text-brand-purple transition-colors">HOME</a>
+                    <a href="#about" class="hover:text-brand-purple transition-colors">ABOUT</a>
+                    <a href="#portfolio" class="hover:text-brand-purple transition-colors">PORTFOLIO</a>
+                    <a href="#contact" class="hover:text-brand-purple transition-colors">CONTACT</a>
+                </div>
+
+                <!-- Right Side Elements -->
+                <div class="flex items-center gap-4 sm:gap-6">
+                    <!-- Search Icon Button -->
+                    <button class="text-gray-700 hover:text-brand-purple transition-colors p-1" aria-label="Search">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                    </button>
+
+                    <!-- Cart Icon Button -->
+                    <button class="relative text-gray-700 hover:text-brand-purple transition-colors p-1" aria-label="Cart">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                        <span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-brand-purple text-white text-[9px] font-bold flex items-center justify-center">2</span>
+                    </button>
+
+                    <!-- Get Started / Let's Talk CTA (Right block of navbar) -->
+                    <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-3.5 bg-brand-purple text-white text-xs font-bold tracking-wider rounded-lg hover:bg-brand-purple/90 transition-colors">
+                        LET'S TALK
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </a>
+                    
+                    <!-- Mobile Hamburger Menu Button -->
+                    <button class="md:hidden text-gray-700 hover:text-brand-purple transition-colors p-1" aria-label="Open menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    </button>
+                </div>
+            </div>
         </header>
 
         <!-- Hero Section -->
