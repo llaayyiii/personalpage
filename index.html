@@ -479,52 +479,105 @@
                 </div>
             </div>
 
-            <!-- Gallery Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Document List (Pure Text & Icons, No Images) -->
+            <div class="flex flex-col gap-4 mt-6">
                 
-                <!-- Card 1 -->
-                <div class="bg-[#18181b] p-5 rounded-[2rem] hover-scale group cursor-pointer border border-white/5 hover:border-brand-purple/30 hover:shadow-[0_20px_50px_rgba(92,36,255,0.15)] flex flex-col h-full transition-all duration-300">
-                    <div class="rounded-[1.5rem] overflow-hidden h-56 sm:h-64 md:h-80 mb-5 relative bg-gray-800">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Market Analysis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center translate-y-4 group-hover:translate-y-0 transition-transform">
-                                <svg class="w-5 h-5 text-brand-dark transform -rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                <!-- Document Item 1 -->
+                <a href="https://drive.google.com" target="_blank" rel="noopener noreferrer" class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-6 rounded-[1.5rem] bg-[#18181b] border border-white/5 hover:border-brand-purple/30 hover:shadow-[0_15px_40px_rgba(92,36,255,0.12)] transition-all duration-300 group">
+                    <div class="flex items-start gap-4">
+                        <!-- Index Badge -->
+                        <div class="w-12 h-12 rounded-xl bg-brand-purple/10 border border-brand-purple/20 flex items-center justify-center text-brand-purple font-display font-black text-lg select-none group-hover:bg-brand-purple group-hover:text-white transition-colors duration-300 shrink-0">
+                            01
+                        </div>
+                        <div>
+                            <!-- Metadata Tags -->
+                            <div class="flex gap-1.5 mb-1.5 flex-wrap">
+                                <span class="px-2 py-0.5 rounded-full bg-brand-purple/10 text-brand-purple text-[9px] font-bold uppercase tracking-wider border border-brand-purple/20">Market Strategy</span>
+                                <span class="px-2 py-0.5 rounded-full bg-white/5 text-gray-400 text-[9px] font-bold uppercase tracking-wider border border-white/5">Google Drive</span>
                             </div>
+                            <!-- Title -->
+                            <h3 class="text-white font-display font-bold text-lg sm:text-xl group-hover:text-brand-purple transition-colors duration-300">
+                                Analisis Celah Pasar Digital & Studi Kelayakan Bisnis
+                            </h3>
+                            <!-- Description -->
+                            <p class="text-gray-400 text-xs sm:text-sm mt-1 max-w-2xl leading-relaxed">
+                                Riset mendalam mengenai identifikasi celah pasar (market loophole) bagi pelaku UMKM ritel tradisional di Yogyakarta dalam bertransisi menuju ekosistem digital.
+                            </p>
                         </div>
                     </div>
-                    <div class="px-2 mt-auto">
-                        <div class="flex gap-2 mb-3">
-                            <span class="px-2.5 py-1 rounded-full bg-brand-purple/10 text-brand-purple text-[10px] font-bold uppercase tracking-wider border border-brand-purple/20">Research</span>
-                            <span class="px-2.5 py-1 rounded-full bg-white/5 text-gray-400 text-[10px] font-bold uppercase tracking-wider">Strategy</span>
+                    <!-- Action Link -->
+                    <div class="flex items-center gap-2 self-end sm:self-center shrink-0">
+                        <span class="text-gray-500 text-[10px] font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden sm:inline">Buka Dokumen</span>
+                        <div class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 group-hover:bg-brand-purple group-hover:border-brand-purple group-hover:text-white transition-all duration-300">
+                            <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </div>
-                        <h3 class="text-white font-display text-xl sm:text-2xl font-semibold mb-2 group-hover:text-brand-purple transition-colors">Market Loophole</h3>
-                        <p class="text-gray-400 text-sm">Riset Celah Pasar Digital & Analisis Kompetitor</p>
                     </div>
-                </div>
+                </a>
 
-                <!-- Card 2 -->
-                <div class="bg-[#18181b] p-5 rounded-[2rem] hover-scale group cursor-pointer border border-white/5 hover:border-brand-purple/30 hover:shadow-[0_20px_50px_rgba(92,36,255,0.15)] flex flex-col h-full transition-all duration-300">
-                    <div class="rounded-[1.5rem] overflow-hidden h-56 sm:h-64 md:h-80 mb-5 relative bg-gray-800">
-                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Digital Blueprint" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 mix-blend-overlay">
-                        <!-- Aksen kuning untuk project highlight -->
-                        <div class="absolute top-4 left-4 z-10">
-                            <span class="px-3.5 py-1.5 bg-[#FACC15] text-brand-dark font-black text-[10px] uppercase tracking-wider rounded-full shadow-lg">Featured</span>
+                <!-- Document Item 2 -->
+                <a href="https://drive.google.com" target="_blank" rel="noopener noreferrer" class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-6 rounded-[1.5rem] bg-[#18181b] border border-white/5 hover:border-brand-purple/30 hover:shadow-[0_15px_40px_rgba(92,36,255,0.12)] transition-all duration-300 group">
+                    <div class="flex items-start gap-4">
+                        <!-- Index Badge -->
+                        <div class="w-12 h-12 rounded-xl bg-brand-purple/10 border border-brand-purple/20 flex items-center justify-center text-brand-purple font-display font-black text-lg select-none group-hover:bg-brand-purple group-hover:text-white transition-colors duration-300 shrink-0">
+                            02
                         </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center translate-y-4 group-hover:translate-y-0 transition-transform">
-                                <svg class="w-5 h-5 text-brand-dark transform -rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        <div>
+                            <!-- Metadata Tags -->
+                            <div class="flex gap-1.5 mb-1.5 flex-wrap">
+                                <span class="px-2 py-0.5 rounded-full bg-[#FACC15]/10 text-[#FACC15] text-[9px] font-bold uppercase tracking-wider border border-[#FACC15]/20">Featured</span>
+                                <span class="px-2 py-0.5 rounded-full bg-brand-purple/10 text-brand-purple text-[9px] font-bold uppercase tracking-wider border border-brand-purple/20">Operations</span>
+                                <span class="px-2 py-0.5 rounded-full bg-white/5 text-gray-400 text-[9px] font-bold uppercase tracking-wider border border-white/5">Google Drive</span>
                             </div>
+                            <!-- Title -->
+                            <h3 class="text-white font-display font-bold text-lg sm:text-xl group-hover:text-brand-purple transition-colors duration-300">
+                                Blueprint Transformasi Digital & Manajemen Operasional UMKM
+                            </h3>
+                            <!-- Description -->
+                            <p class="text-gray-400 text-xs sm:text-sm mt-1 max-w-2xl leading-relaxed">
+                                Panduan operasional dan peta jalan integrasi sistem inventori cloud untuk menyederhanakan rantai pasokan dan manajemen stok barang pada toko kelontong.
+                            </p>
                         </div>
                     </div>
-                    <div class="px-2 mt-auto">
-                        <div class="flex gap-2 mb-3">
-                            <span class="px-2.5 py-1 rounded-full bg-brand-purple/10 text-brand-purple text-[10px] font-bold uppercase tracking-wider border border-brand-purple/20">Workshop</span>
-                            <span class="px-2.5 py-1 rounded-full bg-white/5 text-gray-400 text-[10px] font-bold uppercase tracking-wider">Education</span>
+                    <!-- Action Link -->
+                    <div class="flex items-center gap-2 self-end sm:self-center shrink-0">
+                        <span class="text-gray-500 text-[10px] font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden sm:inline">Buka Dokumen</span>
+                        <div class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 group-hover:bg-brand-purple group-hover:border-brand-purple group-hover:text-white transition-all duration-300">
+                            <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </div>
-                        <h3 class="text-white font-display text-xl sm:text-2xl font-semibold mb-2 group-hover:text-brand-purple transition-colors">Digital Blueprint</h3>
-                        <p class="text-gray-400 text-sm">Workshop Pemetaan Peluang Bisnis UTDI</p>
                     </div>
-                </div>
+                </a>
+
+                <!-- Document Item 3 -->
+                <a href="https://drive.google.com" target="_blank" rel="noopener noreferrer" class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-6 rounded-[1.5rem] bg-[#18181b] border border-white/5 hover:border-brand-purple/30 hover:shadow-[0_15px_40px_rgba(92,36,255,0.12)] transition-all duration-300 group">
+                    <div class="flex items-start gap-4">
+                        <!-- Index Badge -->
+                        <div class="w-12 h-12 rounded-xl bg-brand-purple/10 border border-brand-purple/20 flex items-center justify-center text-brand-purple font-display font-black text-lg select-none group-hover:bg-brand-purple group-hover:text-white transition-colors duration-300 shrink-0">
+                            03
+                        </div>
+                        <div>
+                            <!-- Metadata Tags -->
+                            <div class="flex gap-1.5 mb-1.5 flex-wrap">
+                                <span class="px-2 py-0.5 rounded-full bg-brand-purple/10 text-brand-purple text-[9px] font-bold uppercase tracking-wider border border-brand-purple/20">Data Analysis</span>
+                                <span class="px-2 py-0.5 rounded-full bg-white/5 text-gray-400 text-[9px] font-bold uppercase tracking-wider border border-white/5">Google Drive</span>
+                            </div>
+                            <!-- Title -->
+                            <h3 class="text-white font-display font-bold text-lg sm:text-xl group-hover:text-brand-purple transition-colors duration-300">
+                                Analisis Dampak Finansial & Efisiensi Digitalisasi Ritel
+                            </h3>
+                            <!-- Description -->
+                            <p class="text-gray-400 text-xs sm:text-sm mt-1 max-w-2xl leading-relaxed">
+                                Studi kuantitatif yang mengevaluasi efisiensi biaya operasional dan pertumbuhan pendapatan bersih pasca penerapan pembayaran cashless (QRIS) di ritel lokal.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Action Link -->
+                    <div class="flex items-center gap-2 self-end sm:self-center shrink-0">
+                        <span class="text-gray-500 text-[10px] font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden sm:inline">Buka Dokumen</span>
+                        <div class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 group-hover:bg-brand-purple group-hover:border-brand-purple group-hover:text-white transition-all duration-300">
+                            <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
 
             </div>
         </section>
